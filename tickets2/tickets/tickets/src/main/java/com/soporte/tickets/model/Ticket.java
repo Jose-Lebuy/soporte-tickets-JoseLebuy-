@@ -39,6 +39,9 @@ public class Ticket {
     @Column
     @NotBlank(message = "Asignar un tecnico a los ticket es obligatorio")
     private String tecnicoAsignado;
-
+    
+    @NotNull(message = "id de curso es obligatorio")
     private int curso_adjunto;
 }
+
+
