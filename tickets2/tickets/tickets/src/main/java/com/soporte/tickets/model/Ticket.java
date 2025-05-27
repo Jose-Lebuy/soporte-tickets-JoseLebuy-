@@ -39,4 +39,6 @@ public class Ticket {
     @Column
     @NotBlank(message = "Asignar un tecnico a los ticket es obligatorio")
     private String tecnicoAsignado;
+
+    private int curso_adjunto;
 }
