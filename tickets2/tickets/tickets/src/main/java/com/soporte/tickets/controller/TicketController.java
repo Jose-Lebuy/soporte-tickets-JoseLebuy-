@@ -43,4 +43,8 @@ public class TicketController {
     public Ticket crearTicket(@Valid @RequestBody Ticket ticket) {
         return ticketService.guardarTicket(ticket);
     }
+    @DeleteMapping("/{id}")
+    public void eliminarTicket(@PathVariable Long id) {
+        ticketService.eliminarTicket(id);
+    }
 }
